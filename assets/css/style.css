@@ -13,11 +13,12 @@
 
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
-    --body-font: "Sarabun", sans-serif;
+    --body-font: "Sarabun ", sans-serif;
     --blog-font:"Merriweather", serif;
     --h1-font-size: 1.5rem;
     --h3-font-size: 1rem;
     --normal-font-size: .938rem;
+    --medium-font-size: .879rem;
     --small-font-size: .813rem;
 
     /*========== Font weight ==========*/
@@ -164,6 +165,7 @@ header {
 .blog-content{
     font-family: var(--blog-font);
     font-weight: 100;
+    font-size: var(--medium-font-size)
 }
 /* Swiper class */
 
