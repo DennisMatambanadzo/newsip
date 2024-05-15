@@ -1,6 +1,7 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 /*====2=========== VARIABLES CSS ===============*/
 :root {
     --header-height: 3.5rem;
@@ -14,7 +15,7 @@
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
     --body-font: "Sarabun ", sans-serif;
-    --blog-font:"Merriweather", serif;
+    --blog-font: "Merriweather", serif;
     --h1-font-size: 1.5rem;
     --h3-font-size: 1rem;
     --normal-font-size: .938rem;
@@ -68,15 +69,18 @@ img {
     max-width: 100%;
     height: auto;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 5px;
     border-radius: 2rem;
     background-color: hsl(246, 34%, 35%);
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     border-radius: 2rem;
     background-color: aliceblue;
 }
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
     max-width: 1120px;
@@ -99,23 +103,28 @@ header {
 }
 
 .menu-close,
-.menu-toggle{
+.menu-toggle {
     font-size: 1.3rem;
     cursor: pointer;
 }
-.menu-close{
+
+.menu-close {
     position: absolute;
-    top:1.2rem;
-    right:1.2rem;
+    top: 1.2rem;
+    right: 1.2rem;
 }
 
-.nav{
+.nav {
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-inline: 1rem;
-  }
+}
+
+.nav-menu {
+    border-bottom: 1px solid green;
+}
 
 /* Navigation for mobile devices */
 @media screen and (max-width:1023px) {
@@ -136,12 +145,13 @@ header {
     justify-content: center;
     row-gap: 2rem;
 }
-.nav-link{
+
+.nav-link {
     color: var(--body-color);
 }
 
-.show-menu{
-    top:0;
+.show-menu {
+    top: 0;
 }
 
 
@@ -152,32 +162,69 @@ header {
 /*=============== HOME ===============*/
 
 /*=============== BLOG ===============*/
-.blog-title{
+.title-header {
     font-size: 1.625rem;
     font-weight: 600;
 }
-.profile-img{
+
+.profile-img {
     width: 60px;
 }
-.profile-img img{
+
+.profile-img img {
     border-radius: 50%;
 }
-.blog-details{
+
+.blog-details {
     display: flex;
     padding-block: 1rem 3rem;
     column-gap: 3rem;
     align-items: center;
 }
-.author-date{
+
+.author-date {
     display: grid;
     row-gap: .235rem;
 }
 
-.blog-content{
+.blog-content {
     font-family: var(--blog-font);
     font-weight: 100;
     font-size: var(--medium-font-size)
 }
+
+/*============== BLOGS ==============*/
+.blogs-group {
+    padding-block: 3rem 3rem;
+}
+
+.blog-top,
+.single-details {
+    display: flex;
+}
+
+.blog-top {
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.single-details {
+    column-gap: .847rem;
+}
+
+.blogs-profile-img {
+    width: 45px;
+}
+
+.blogs-profile-img img {
+    border-radius: 51%;
+}
+.blog-middle{
+    /* padding-block: 2.1rem 1.3rem; */
+    max-height: 1.3rem;
+    text-wrap:wrap;
+}
+
 /* Swiper class */
 
 
