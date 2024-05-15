@@ -68,7 +68,15 @@ img {
     max-width: 100%;
     height: auto;
 }
-
+::-webkit-scrollbar{
+    width: 5px;
+    border-radius: 2rem;
+    background-color: hsl(246, 34%, 35%);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 2rem;
+    background-color: aliceblue;
+}
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
     max-width: 1120px;
@@ -127,6 +135,9 @@ header {
     display: grid;
     justify-content: center;
     row-gap: 2rem;
+}
+.nav-link{
+    color: var(--body-color);
 }
 
 .show-menu{
